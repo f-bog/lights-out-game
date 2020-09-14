@@ -1,0 +1,76 @@
+.Board {
+  margin: 0 auto;
+}
+
+/* @font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+} */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.Board-title {
+  font-size: 70px;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+.Board-restart {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bcd4;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.Board-restart:hover {
+  background-color: #28d7fe;
+  box-shadow: 0 0 3vw #2356ff;
+}
+.neon-orange {
+  color: #fb4264;
+
+  text-shadow: 0 0 3vw #f40a35;
+  animation: neon-orange 3s ease infinite;
+  -moz-animation: neon-orange 3s ease infinite;
+  -webkit-animation: neon-orange 3s ease infinite;
+}
+
+.neon-blue {
+  color: #426dfb;
+
+  text-shadow: 0 0 3vw #2356ff;
+  animation: neon-blue 2s linear infinite;
+  -moz-animation: neon-blue 2s linear infinite;
+  -webkit-animation: neon-blue 2s linear infinite;
+  -o-animation: neon-blue 2s linear infinite;
+}
+
+@keyframes neon-orange {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+      0 0 10vw #fa1c16, 0 0 0.4vw #fe28d0, 0.5vw 0.5vw 0.1vw #7c1480;
+    color: #d328fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #310a40, 0 0 1.5vw #310a40, 0 0 5vw #310a40,
+      0 0 5vw #310a40, 0 0 0.2vw #310a40, 0.5vw 0.5vw 0.1vw #310a40;
+    color: #7a1f49;
+  }
+}
+
+@keyframes neon-blue {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+      0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+    color: #28d7fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+      0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+    color: #146c80;
+  }
+}
