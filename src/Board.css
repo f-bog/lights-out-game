@@ -9,22 +9,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 .Board-title {
+  padding-top: 20px;
   font-size: 70px;
   font-family: 'Nunito', sans-serif !important;
 }
 
-.Board-restart {
-  padding: 10px 30px;
+.Board-button {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #00bcd4;
-  color: black;
+  background-color: #263238;
+  color: white;
   font-size: 20px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
-.Board-restart:hover {
+.Board-button:hover {
   background-color: #28d7fe;
   box-shadow: 0 0 3vw #2356ff;
 }

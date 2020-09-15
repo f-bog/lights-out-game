@@ -110,7 +110,7 @@ class Board extends Component {
           <span className='neon-orange'>You</span>
           <span className='neon-blue'>Win</span>
         </div>
-        <button className='Board-restart' onClick={this.resetGame}>
+        <button className='Board-button' onClick={this.resetGame}>
           Play again!
         </button>
       </div>
@@ -119,10 +119,11 @@ class Board extends Component {
 
     // TODO
     let displayBoard = (
-      <div className='Board-title'>
-        <span className='neon-orange'>Lights</span>
-        <span className='neon-blue'>Out</span>
-
+      <div>
+        <div className='Board-title'>
+          <span className='neon-orange'>Lights</span>
+          <span className='neon-blue'>Out</span>
+        </div>
         <table className='Board'>
           <tbody>
             {this.state.board.map((rows, rowIndex) => (
